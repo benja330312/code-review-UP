@@ -52,9 +52,7 @@ export class Game {
 
     if (this.isThirdRowFull() && this.isThirdRowFullWithSameSymbol()) {
       return this._board.TileAt(2, 0)!.Symbol;
-    }
-
-    return ' ';
+    };
   }
 
   private isFirstRowFull() {
